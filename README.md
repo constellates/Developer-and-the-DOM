@@ -8,6 +8,6 @@ As web developers we see a variety of tools evolve every year that all claim to 
 
 We will provide an overview of the history of the web from the developer’s perspective while focusing on paradigmatic turning points. We will discuss how historical problem solving can make us better at what we do. We will share our personal woes, lessons, and victories from years of experience in the industry. We will compare the basic architectural paradigms of a couple of contemporary client side frameworks. And after mapping our way through the history of web development we will look at what the near future may hold.
 
-# Running the slide
+# Running the slides
 
 Run ```npm install``` to install dependencies and ```grunt serve``` to begin serving the application locally.
