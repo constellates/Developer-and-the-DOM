@@ -16,6 +16,8 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<!--custom CSS -->
+		<link rel="stylesheet" href="./devdom.css" id="custom">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -41,28 +43,39 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
-				<section>
+				<section data-background-transition="slide"  data-background-size="400px" data-background-position="50% 95%" data-background="./img/sqm-bg-light.png">
 					<h1>The Developer and the DOM</h1>
 					<h3>A history of manipulation and abstraction.</h3>
 					<p>
 						<small>Presented by <a href="">Zack Michael</a> / <a href="">Greg Noack</a></small>
 					</p>
 				</section>
-
-				<section>
-					<h2>Who are we?</h2>
+				<section data-transition="zoom-in fade-out">
+					<h2>This DOM?</h2>
+					<img class="clean" src="./img/DOM.jpg" alt="DD" />
 				</section>
+				<section data-transition="fade-out">
+					<h2>Nah, This DOM!</h2>
+					<img class="clean" src="./img/DOM-js.png" alt="DOM JS" />
+				</section>
+				<section data-background-transition="slide"  data-background-size="400px" data-background-position="50% 95%" data-background="./img/sqm-bg-light.png" >
+					<h2>Who are we?</h2>
+					<p>We are two developers from Squishymedia.</p>
+					<div class="half"><p>Zack Michael</p><img class="clean" src="./img/zack_michael.jpg" alt="Zack Michael" /></div>
+					<div class="half"><p>Gregory Noack</p><img class="clean" src="./img/gregory_noack.jpg" alt="Gregory Noack" /></div>
 
-				<section>
+				</section>
+				<section data-background-transition="slide"   data-background="./img/2001.gif">
 					<h2>Why are we here?</h2>
 				</section>
-
 				<section>
 					<h2>Where did javascript come from?</h2>
+					<pre class=" code"><span class="jsmark-f">document</span><span class="jsmark-m ">.write</span><span class="jsmark-par">(</span><span class="jsmark-q ">"</span><span class="jsmark-str ">Hello Open Source Bridge!</span><span class="jsmark-q ">"</span><span class="jsmark-par ">)</span><span class="jsmark-closing">;</span></pre>
 				</section>
 
-				<section>
-					<h2>What was javascript intended for?</h2>
+				<section data-background-size="100%" data-background="./img/netscape.gif">
+					<h2 class="overlight">What was javascript intended for?</h2>
+				<!-- 	<img class="clean netscape" src="./img/netscape.gif" alt="Netscape" /> -->
 				</section>
 
 				<section>
@@ -71,7 +84,8 @@
 
 				<section>
 					<section>
-						<h2>Problem 1: All the browsers are different</h2>
+						<h2>Problem 1:</h2>
+						<p> All the browsers are different</p>
 					</section>
 					<section>
 						<div>
