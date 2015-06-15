@@ -104,14 +104,54 @@
 				</section>
 
 				<section>
-					<h2>Problem 2: Application Architecture</h2>
-					<ul>
-						<li>How do we organize our applications?</li>
-					</ul>
+					<section>
+						<h2>Problem 2: Application Architecture</h2>
+						<ul>
+							<li>How do we organize our applications?</li>
+						</ul>
+					</section>
+					<section>
+						<pre>
+							$(document).ready(function() {
+
+								user = {};
+								user.isLoggedIn = fals;
+
+								function logout () {
+									user.isLoggedIn = false;
+									$('.navbar.usermenu').empty();
+									$('.navbar.usermenu').append('<li><button id="login">log in</button></li>');
+									$('#login').click(login);
+								}
+
+								function login () {
+									user.isLoggedIn = true;
+									$('.navbar.usermenu').empty();
+									$('.navbar.usermenu').append('<li><button id="logout">log out</button></li>');
+									$('#logout').click(logout);
+								}
+
+								if (user.isLoggedIn) {
+									$('.navbar.usermenu').append('<li><button id="logout">log out</button></li>');
+									$('#logout').click(logout);
+								} else {
+									$('.navbar.usermenu').append('<li><button id="login">log in</button></li>');
+									$('#login').click(login);
+								}
+
+							});
+						</pre>
+					</section>
 				</section>
 
 				<section>
-					<h2>Solution: Early frameworks</h2>
+					<section>
+						<h2>Solution: Early frameworks</h2>
+					</section>
+					<section>
+						<p>jQuery made DOM manipulation straight forward but thinking updating the DOM piecemeal is too granular.</p>
+						<p>We want to be able to be able to focus on business logic.</p>
+					</section>
 				</section>
 
 				<section>
@@ -133,13 +173,21 @@
 				</section>
 
 				<section>
-					<h2>Solution: Next generation frameworks</h2>
-					<ul>
-						<li>Backbone</li>
-						<li>Angular</li>
-						<li>Ember</li>
-						<li>Knockout</li>
-					</ul>
+					<section>
+						<h2>Solution: Next generation frameworks</h2>
+						<ul>
+							<li>Backbone</li>
+							<li>Angular</li>
+							<li>Ember</li>
+							<li>Knockout</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>Diffing algorithm</li>
+							<li>Client side router</li>
+						</ul>
+					</section>
 				</section>
 
 				<section>
@@ -151,25 +199,49 @@
 				</section>
 
 				<section>
-					<h2>Solution: Another wave of framework evolution</h2>
-					<ul>
-						<li>Angular 2.0</li>
-						<li>React</li>
-						<li>Riot</li>
-						<li>JSBlocks</li>
-					</ul>
+					<section>
+						<h2>Solution: Another wave of framework evolution</h2>
+						<ul>
+							<li>Angular 2.0</li>
+							<li>React</li>
+							<li>Riot</li>
+							<li>JSBlocks</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Virtual DOM</h2>
+					</section>
+					<section>
+						<h2>Language enhancements</h2>
+						<ul>
+							<li>ECMA Script 6</li>
+							<li>TypeScript</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Components</h2>
+					</section>
 				</section>
 
 				<section>
-					<h2>Problems we face today</h2>
-					<ul>
-						<li>Web and mobile are becoming more intertwined despite highly disparate toolkits</li>
-						<li>Networks and mobile devices still have limitations</li>
-						<li>Security has been thrust to the front of everyone's minds</li>
-						<li>Legacy Support</li>
-						<li>Outdated compliance standards 508</li>
-						<li>And insane technology rate</li>
-					</ul>
+					<section>
+						<h2>Problems we face today</h2>
+					</section>
+					<section>
+						Web and mobile technologies have a lot of crossover yet have very different platforms.
+					</section>
+					<section>
+						Networks and small devices still suffer from bandwith and performance limitations.
+					</section>
+					<section>
+						Amidst the recent NSA scandals, privacy has become a large public issue.
+					</section>
+					<section>
+						Requirements for legacy support complicate are applications and limit the technologies that we can use.
+					</section>
+					<section>
+						The javascript community has an insane churn rate.
+					</section>
 				</section>
 
 			</div>
