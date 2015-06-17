@@ -131,13 +131,13 @@
 			backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
 
 			// Parallax background image
-			parallaxBackgroundImage: '../img/footer_lodyas.png', // CSS syntax, e.g. "a.jpg"
+			parallaxBackgroundImage: '', // CSS syntax, e.g. "a.jpg"
 
 			// Parallax background size
-			parallaxBackgroundSize: '1200px 1200px', // CSS syntax, e.g. "3000px 2000px"
+			parallaxBackgroundSize: '', // CSS syntax, e.g. "3000px 2000px"
 
 			// Amount of pixels to move the parallax background per slide step
-			parallaxBackgroundHorizontal: 200,
+			parallaxBackgroundHorizontal: null,
 			parallaxBackgroundVertical: null,
 
 			// Number of slides away from the current that are visible
@@ -452,7 +452,7 @@
 		dom.background = createSingletonNode( dom.wrapper, 'div', 'backgrounds', null );
 
 		// Progress bar
-		dom.progress = createSingletonNode( dom.wrapper, 'div', 'progress', '<span><span class="progress-inner">thing</span></span>' );
+		dom.progress = createSingletonNode( dom.wrapper, 'div', 'progress', '<span></span>' );
 		dom.progressbar = dom.progress.querySelector( 'span' );
 
 		// Arrow controls
