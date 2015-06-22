@@ -49,51 +49,95 @@
 					<p>
 						<small>Presented by <a href="">Zack Michael</a> / <a href="">Greg Noack</a></small>
 					</p>
+					<aside class="notes">
+						<p>Hello World!</p>
+					</aside>
 				</section>
 				<section data-transition="zoom-in fade-out">
 					<h2>This DOM?</h2>
 					<img class="clean" src="./img/DOM.jpg" alt="DD" />
+					<aside class="notes">
+						<p>So, What Dom are we talking about? This guy?</p>
+					</aside>
 				</section>
 				<section data-transition="fade-out">
 					<h2>Nah, This DOM!</h2>
 					<img class="clean" src="./img/DOM-js.png" alt="DOM JS" />
+					<aside class="notes">
+						<p>Nope, The Document Object Model or the "DOM" is a cross-platform and language-independent convention for representing and interacting with objects the HTML</p>
+					</aside>
 				</section>
 				<section data-background-transition="slide"  data-background-size="400px" data-background-position="50% 95%" data-background="./img/sqm-bg-light.png" >
 					<h2>Who are we?</h2>
 					<p>We are two developers from Squishymedia.</p>
 					<div class="half"><p>Zack Michael</p><img class="clean" src="./img/zack_michael.jpg" alt="Zack Michael" /></div>
 					<div class="half"><p>Gregory Noack</p><img class="clean" src="./img/gregory_noack.jpg" alt="Gregory Noack" /></div>
-
+					<aside class="notes">
+						<p>My Name is Gregory Noack and this is Zack Michael. We work at Squishymedia right here in East Portland and we both really like Javascript.</p>
+					</aside>
 				</section>
 				<section data-background-transition="slide"   data-background="./img/2001.gif">
 					<h2>Why are we here?</h2>
 					<aside class="notes">
 						<ul>
+							<li>We are here to entertain and amaze you. But hopefully just keep you from falling asleep</li>
+							<li>We plain to:</li>
 							<li>Trace the trajectory of client-side javascript from the begining until today.</li>
-							<li>Neither one of us is David Crockford</li>
-							<li>Explain problems faced by developers and some solutions that have evolved.</li>
-							<li>Examine a few problems we face today and where we may be headed.</li>
+							<li>That said, Neither one of us is David Crockford</li>
+							<li>Hopefully we can explain some of the problems faced by developers and the solutions that have evolved.</li>
+							<li>Also, we will examine a few current problems in more detail and where we may be headed.</li>
 						</ul>
 					</aside>
 				</section>
 				<section>
 					<h2>Where did javascript come from?</h2>
+					<aside class="notes">
+						<ul>
+							<li>Originally a server-side scripting language, JavaScript was developed by Brendan Eich in 1995, while he was working for Netscape.</li>
+							<li>He developed it in a week (so he says).</li>
+							<li>Developed as Mocha, shipped as Livescript, and later changed to JavaScript (but also known as ECMAScript) to latch onto the populararity Java had. </li>
+							<li>Begining in 1996 standards were written, Netscape pushed it into the Browser and Microsoft refused to play along.</li>
+							<li>And the DOM was born.</li>
+							<li>To render a document such as an HTML page, most web browsers use an internal model similar to the DOM.</li>
+							<li>The limited facilities for detecting user-generated events and modifying the HTML document in the first generation of these languages eventually became known as "DOM Level 0" or "Legacy DOM.</li>
+							<li> eventually W3C began working on a standardized DOM
+								<ul>
+									<li>DOM Level 2 was published in late 2000. It introduced the "getElementById" f</li>
+									<li> the current release DOM Level 3 came out in 2003</li>
+									<li> and DOM Level 4 is being developed</li>
+								</ul>
+							</li>
+							<li>
+						</ul>
+					</aside>
 					<pre class=" code"><span class="jsmark-f">document</span><span class="jsmark-m ">.write</span><span class="jsmark-par">(</span><span class="jsmark-q ">"</span><span class="jsmark-str ">Hello Open Source Bridge!</span><span class="jsmark-q ">"</span><span class="jsmark-par ">)</span><span class="jsmark-closing">;</span></pre>
 				</section>
 
 				<section data-background-size="100%" data-background="./img/netscape.gif">
 					<h2 class="overlight">What was javascript intended for?</h2>
+					<aside class="notes">
+						<ul>
+							<li>Javascript was intended to be a language that would complement Java by appealing to nonprofessional programmers</li>
+							<li>funny how it is still treated as a lesser language when compared with more traditional langauges.</li>
+							<li>Javascript was designed to run in Netscape. It's success led to it becomeing the standard scripting language of the web</li>
+							<li>Which is why you can find it in every modern browser today.</li>
+							<li>And only within the last 10 years have people really started using it as a dynamic object-oriented "programming" language</li>
+						</ul>
+					</aside>
 				<!-- 	<img class="clean netscape" src="./img/netscape.gif" alt="Netscape" /> -->
+
 				</section>
 
-				<section>
+<!-- 				<section>
 					<h2>How did it end up in the browser?</h2>
-				</section>
+				</section> -->
 
 				<section>
-					<section>
-						<h2>Problem 1:</h2>
-						<p> All the browsers are different</p>
+					<section data-background-transition="slide" data-background="./img/browser-war-illustration.jpg">
+						<div class="overlight">
+							<h2>Problem 1:</h2>
+							<p> All the browsers are different</p>
+						</div>
 						<aside class="notes">
 							<ul>
 								<li>There was a standard</li>
@@ -103,7 +147,7 @@
 						</aside>
 					</section>
 					<section>
-						<ul>
+						<ul >
 							<li>Selector Searching</li>
 							<li>DOM traversal</li>
 							<li>DOM manipulation</li>
@@ -128,11 +172,12 @@
 				</section>
 
 				<section>
-					<section>
-						<h2>Problem 2: Application Architecture</h2>
-						<ul>
-							<li>How do we organize our applications?</li>
-						</ul>
+					<section data-background-transition="slide" data-background="./img/panda.gif" >
+						<div class="overlight">
+							<h2>Problem 2: Application Architecture</h2>
+							<p class="orange" >How do we organize our applications?</p>
+							</ul>
+						</div>
 						<aside class="notes">
 							<ul>
 								<li>of course we can figure out how to organize an app</li>
@@ -155,16 +200,17 @@
 				</section>
 
 				<section>
-					<section>
+					<section >
 						<h2>Solution: Early frameworks</h2>
 					</section>
-					<section>
-						<ul>
-							<li>ExtJS</li>
-							<li>YUI</li>
-							<li>Dojo</li>
-							<li>and many more</li>
-						</ul>
+					<section data-background-transition="slide" data-background="./img/karatekids.gif">
+							<!-- <img class="clean" style="width:100%; height:auto; " src="./img/karatekids.gif"> -->
+							<ul class="overlight teal">
+								<li>ExtJS</li>
+								<li>YUI</li>
+								<li>Dojo</li>
+								<li>and many more</li>
+							</ul>
 						<aside class="notes">
 							<li>Not totally different from the browser patching libraries like jquery</li>
 							<li>Many early libs covered mixes of browser support issues and arch concerns</li>
@@ -174,33 +220,41 @@
 
 				<section>
 					<h2>Complexity increases</h2>
+					<div class="">
+						<img class="clean" style="width: 50px" src="./img/ajax.gif"><br/><span class="orange">Loading Everything...</span><br/><br/>
+
+					</div>
 					<ul>
-						<li>Ajax everywhere</li>
+						<li>Ajax everywhere </li>
 						<li>More complex interactions</li>
 						<li>Mobile devices create a new experience</li>
 					</ul>
 				</section>
 
-				<section>
-					<h2>Problem 3: How to deal with increase complexity</h2>
-					<ul>
-						<li>Single page applications</li>
-						<li>Tons of logic on the client</li>
-						<li>Routing</li>
-						<li>Templating</li>
-						<li>Need to focus on business logic</li>
-					</ul>
+				<section data-background-transition="slide" data-background="./img/complex.jpg">
+					<div class="overlight">
+						<h2>Problem 3: How to deal with increase complexity</h2>
+						<ul>
+							<li>Single page applications</li>
+							<li>Tons of logic on the client</li>
+							<li>Routing</li>
+							<li>Templating</li>
+							<li>Need to focus on business logic</li>
+						</ul>
+					</div>
 				</section>
 
 				<section>
-					<section>
-						<h2>Solution: Next generation frameworks</h2>
-						<ul>
-							<li>Backbone</li>
-							<li>Angular</li>
-							<li>Ember</li>
-							<li>Knockout</li>
-						</ul>
+					<section data-background-transition="slide" data-background-repeat="repeat" data-background-size="400px" data-background="./img/frameworks.png" data-background-color="#000">
+						<div class="overlight">
+							<h2>Solution: Next generation frameworks</h2>
+							<ul class="teal">
+								<li>Backbone</li>
+								<li>Angular</li>
+								<li>Ember</li>
+								<li>Knockout</li>
+							</ul>
+						</div>
 						<aside class="notes">
 							<ul>
 								<li>Angular first but not initial front-runner</li>
@@ -213,7 +267,7 @@
 					<section><h2>What did they add?</h2></section>
 					<section>
 						<h2>Diffing algorithm</h2>
-						<img class="clean" style="width: 600px; background: #EEE;" src="./img/digest-cycle.png">
+						<img class="clean" style="width: 550px;" src="./img/diffing.png">
 					</section>
 					<section>
 						<ul>
@@ -245,11 +299,11 @@
 					</section>
 					<section>
 						<h2>Virtual DOM</h2>
-						<img class="clean" style="width: 500px; background: #EEE;" src="./img/react-diffing.png">
+						<img class="clean" style="width: 500px;" src="./img/react-diffing.png">
 					</section>
 					<section>
 						<h2>Virtual DOM Possibilities</h2>
-						<img class="clean" style="width: 500px; background: #EEE;" src="./img/virtual-dom-possibilities.png">
+						<img class="clean" style="width: 500px;" src="./img/virtual-dom-possibilities.png">
 						<aside class="notes">
 							<ul>
 								<li>Template your interface on any platform</li>
@@ -271,8 +325,8 @@
 				</section>
 
 				<section>
-					<section>
-						<h2>Problems we face today</h2>
+					<section data-background-transition="slide" data-background="./img/monkey-gun.gif">
+						<h2 class="overlight">Problems we face today</h2>
 					</section>
 					<section>
 						Web and mobile technologies have a lot of crossover yet have very different platforms.
@@ -308,9 +362,9 @@
 							<li>Still seeing IE8 requirements for projects</li>
 						</aside>
 					</section>
-					<section>
-						The javascript community has an insane churn rate.
-						<img class="clean" src="./img/days_since.png">
+					<section data-background-transition="slide" data-background="./img/days_since.png"/>
+						<p class="overlight orange">The javascript community has an insane churn rate.</p>
+						<!-- <img class="clean" src="./img/days_since.png"> -->
 					</section>
 				</section>
 

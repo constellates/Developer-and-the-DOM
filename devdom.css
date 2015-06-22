@@ -1,20 +1,40 @@
-
+body{
+	background:url( ./img/bg.png);
+}
 .half{
 	display: block;
 	float: left;
 	width: 50%;
+}
+.one3{
+	display: block;
+	float: left;
+	width: 35%;
+}
+.two3{
+	display: block;
+	float: left;
+	width: 65%;
 }
 
 .reveal .progress {
 	height: 10px;
 }
 
-.reveal h2.overlight{
-	  background-color: rgba(0, 0, 0, 0.7);
-  padding: 30px;
+.reveal .overlight{
+	background-color: rgba(0, 0, 0, 0.7);
+  	padding: 30px;
+}
+.reveal ul.overlight{
+	  padding: 30px 110px;
 }
 
-.reveal h2.purple{color:#9a589a;}
+.reveal h2.purple{
+	color:#9a589a;
+}
+.reveal h2.teal{
+	color:#4eba99;
+}
 
 .two001{
   width: 800px;
@@ -57,3 +77,5 @@
 }
 
 .purple{color:#9a589a;}
+.orange{color:#ff9e52;}
+.teal{color:#4eba99;}

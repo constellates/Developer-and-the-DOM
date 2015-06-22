@@ -131,14 +131,14 @@
 			backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
 
 			// Parallax background image
-			parallaxBackgroundImage: '', // CSS syntax, e.g. "a.jpg"
+			parallaxBackgroundImage: './img/bg.png', // CSS syntax, e.g. "a.jpg"
 
 			// Parallax background size
-			parallaxBackgroundSize: '', // CSS syntax, e.g. "3000px 2000px"
+			parallaxBackgroundSize: '1200px 1200px', // CSS syntax, e.g. "3000px 2000px"
 
 			// Amount of pixels to move the parallax background per slide step
-			parallaxBackgroundHorizontal: null,
-			parallaxBackgroundVertical: null,
+			parallaxBackgroundHorizontal: 200,
+			parallaxBackgroundVertical: 30,
 
 			// Number of slides away from the current that are visible
 			viewDistance: 3,
