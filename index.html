@@ -150,19 +150,27 @@
 						</div>
 						<aside class="notes">
 							<ul>
-								<li>There was a standard</li>
-								<li>but always gaps in support and bugs</li>
-								<li>Today browsers are much better - not perfect</li>
+								<li>There has almost always been an agreed upon standard that the browsers must support.</li>
+								<li>But there have always been differences in what features got implemented.</li>
+								<li>And features above an beyond the spec have always had differences if they make it to more than one browser at all.</li>
+								<li>Today browsers are much better - but still not perfect</li>
 							</ul>
 						</aside>
 					</section>
 					<section>
-						<ul >
+						<h2>Pain Points</h2>
+						<ul>
 							<li>Selector Searching</li>
 							<li>DOM traversal</li>
 							<li>DOM manipulation</li>
 							<li>XHR/AJAX</li>
 						</ul>
+						<aside class="notes">
+							<ul>
+								<li>It hurts the most with the features we want to use the most.</li>
+								<li>I wasn't a dev at the time but people talk about early XHR like a traumatic experience.</li>
+							</ul>
+						</aside>
 					</section>
 				</section>
 
@@ -171,9 +179,9 @@
 						<h2>Solution: Libraries that provide a common API</h2>
 						<ul>
 							<li>jQuery</li>
-							<li>mootools</li>
-							<li>prototype</li>
-							<li>etc</li>
+							<li>Mootools</li>
+							<li>Prototype</li>
+							<li>Others</li>
 						</ul>
 					</section>
 					<section>
@@ -185,14 +193,16 @@
 					<section data-background-transition="slide" data-background="./img/panda.gif" >
 						<div class="overlight">
 							<h2>Problem 2: Application Architecture</h2>
-							<p class="orange" >How do we organize our applications?</p>
+							<p class="orange">How do we organize our applications?</p>
 							</ul>
 						</div>
 						<aside class="notes">
 							<ul>
 								<li>of course we can figure out how to organize an app</li>
-								<li>but why are we all doing it independently</li>
-								<li>what happens when a new dev takes over</li>
+								<li>but why are we would we all be doing it independently</li>
+								<li>I love nerding out about design patterns but I don't want to tell my coworkers our project is going to be a month late because I'm really into designing a new unconventional framework</li>
+								<li>What happens when a new dev takes over?</li>
+								<li>How do we not rage quit like that panda when we take on old code.</li>
 							</ul>
 						</aside>
 					</section>
@@ -201,9 +211,11 @@
 						<aside class="notes">
 							<span>How do we handle?</span>
 							<ul>
+								<li>This doesn't look to bad but as we grow the project how do we handle...</li>
 								<li>separating concerns</li>
 								<li>maintaining multiple files</li>
-								<li>working logically with other developers</li>
+								<li>working with other developers on a project</li>
+								<li>sharing our solutions with the rest of the world (open source)</li>
 							</ul>
 						</aside>
 					</section>
@@ -214,7 +226,6 @@
 						<h2>Solution: Early frameworks</h2>
 					</section>
 					<section data-background-transition="slide" data-background="./img/karatekids.gif">
-							<!-- <img class="clean" style="width:100%; height:auto; " src="./img/karatekids.gif"> -->
 							<ul class="overlight teal">
 								<li>ExtJS</li>
 								<li>YUI</li>
@@ -222,8 +233,12 @@
 								<li>and many more</li>
 							</ul>
 						<aside class="notes">
+							<li>The solution to some of these problems came in these early framewords</li>
 							<li>Not totally different from the browser patching libraries like jquery</li>
 							<li>Many early libs covered mixes of browser support issues and arch concerns</li>
+							<li>They did</li>
+							<li>provide sets of idioms for developers to follow</li>
+							<li>this not only allows for ease of working together but allow people to contribute small reusable chunks of functionality</li>
 						</aside>
 					</section>
 				</section>
@@ -243,7 +258,7 @@
 					<aside class="notes">
 						<ul>
 							<li>What's going on?</li>
-							<li>The work we've seen so far is paying off</li>
+							<li>The work we've talked about so far is paying off</li>
 							<li>better sites are being built and the internet is growing in use as a result</li>
 							<li>Because it's popularizing people want to pay to put more things on the internet</li>
 							<li>Everyone starts getting phones that have browsers</li>
@@ -251,8 +266,8 @@
 					</aside>
 				</section>
 
-				<section data-background-transition="slide" data-background="./img/mobileweb.jpg">
-					<section>
+				<section data-background-transition="slide">
+					<section data-background="./img/mobileweb.jpg">
 						<div class="overlight">
 							<h2>Problem 3: Mobile Web</h2>
 							<ul>
@@ -269,15 +284,21 @@
 							</ul>
 						</aside>
 					</section>
+				</section>
+				<section>
 					<section>
 						<div class="overlight">
 							<h2>Solutions:</h2>
 							<ul class="teal">
-								<li>Single Page Application (SPA)</li>
 								<li>Responsiveness</li>
 								<li>Device detection</li>
+								<li>Single Page Application (SPA)</li>
 							</ul>
 						</div>
+					</section>
+					<section>
+						<h2>Single Page Applications</h2>
+						<img class="clean" style="width: 550px;" src="./img/spa.png">
 						<aside class="notes">
 							<ul>
 								<li>Instead of asking the server for a new page everytime something changes we get THE single page from the server once and change it as we need.</li>
@@ -323,16 +344,24 @@
 					</section>
 					<section><h2>What did they add?</h2></section>
 					<section>
-						<h2>Diffing algorithm</h2>
-						<img class="clean" style="width: 550px;" src="./img/diffing.png">
-					</section>
-					<section>
 						<ul>
 							<li>Client side routing</li>
 							<li>Data Binding</li>
 							<li>Module systems</li>
 							<li>Style Guides and Best Practices</li>
 						</ul>
+					</section>
+					<section>
+						<h2>Diffing algorithm</h2>
+						<img class="clean" style="width: 550px;" src="./img/diffing.png">
+						<aside class="notes">
+							<ul>
+								<li>Used to have to think about the business logic we wanted and then correlate that to which DOM elements we are going to add, move, and destroy and how to actually make that happen.</li>
+								<li>Now we can link a data point to an element or style and know that when one changes the other will</li>
+								<li>ALlows us to focus on business logic not DOM logic</li>
+								<li>DOM interaction optimization can happen behind the scenes in one place</li>
+							</ul>
+						</aside>
 					</section>
 				</section>
 
@@ -342,6 +371,13 @@
 						<li>Recent frameworks were built on server side paradigms</li>
 						<li>They still relied on the DOM</li>
 					</ul>
+					<aside class="notes">
+						<ul>
+							<li>Separating templates and logic doesn't always make things easier to understand.</li>
+							<li>Server side architecture can be overkill</li>
+							<li>DOM manipulations are some of the slows things we can do and we're still heavily using them.</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
@@ -357,6 +393,12 @@
 					<section>
 						<h2>Virtual DOM</h2>
 						<img class="clean" style="width: 500px;" src="./img/react-diffing.png">
+						<aside class="notes">
+							<ul>
+								<li>We can use non DOM javascript performance to update how are view should look.</li>
+								<li>And selectively apply those DOM changes in the most performant way.</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<h2>Virtual DOM Possibilities</h2>
@@ -365,6 +407,7 @@
 							<ul>
 								<li>Template your interface on any platform</li>
 								<li>Then render it on any platform</li>
+								<li>And go back and forth</li>
 								<li>Only a view layer, but gets us closer to write once run anywhere</li>
 							</ul>
 						</aside>
@@ -378,6 +421,10 @@
 					</section>
 					<section>
 						<h2>Components</h2>
+						<ul>
+							<li>Encapsulate functionality</li>
+							<li>Build views like nesting dolls</li>
+						</ul>
 					</section>
 				</section>
 
@@ -405,11 +452,11 @@
 						</aside>
 					</section>
 					<section>
-						Amidst the recent NSA scandals, privacy has become a large public issue.
+						Amidst NSA scandals, privacy has become a large public issue and the web has proven itself to not be consistently secure.
 						<aside class="notes">
 							<ul>
 								<li>We're putting more code in the client</li>
-								<li>People get tempted to put the wrong code there</li>
+								<li>People get tempted to put the wrong code there now that they're able to.</li>
 							</ul>
 						</aside>
 					</section>
@@ -424,6 +471,8 @@
 						<!-- <img class="clean" src="./img/days_since.png"> -->
 					</section>
 				</section>
+
+				<section><h2>Thanks</h2></section>
 
 			</div>
 
