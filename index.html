@@ -67,7 +67,7 @@
 					<aside class="notes">
 						<ul>
 							<li>We are here to entertain and amaze you. But hopefully just keep you from falling asleep</li>
-							<li>We plain to:</li>
+							<li>We plan to:</li>
 							<li>Trace the trajectory of client-side javascript from the begining until today.</li>
 							<li>That said, Neither one of us is David Crockford</li>
 							<li>Hopefully we can explain some of the problems faced by developers and the solutions that have evolved.</li>
@@ -229,11 +229,58 @@
 						<li>More complex interactions</li>
 						<li>Mobile devices create a new experience</li>
 					</ul>
+
+					<aside class="notes">
+						<ul>
+							<li>What's going on?</li>
+							<li>The work we've seen so far is paying off</li>
+							<li>better sites are being built and the internet is growing in use as a result</li>
+							<li>Because it's popularizing people want to pay to put more things on the internet</li>
+							<li>Everyone starts getting phones that have browsers</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section data-background-transition="slide" data-background="./img/mobileweb.jpg">
+					<section>
+						<div class="overlight">
+							<h2>Problem 3: Mobile Web</h2>
+							<ul>
+								<li>Tiny screens</li>
+								<li>Spotty networks</li>
+								<li>Weak hardware</li>
+							</ul>
+						</div>
+						<aside class="notes">
+							<ul>
+								<li>Responsiveness is now a big concern</li>
+								<li>What does the application do if your network dies for a second?</li>
+								<li>How do we fix this without adding too much processing overhead</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<div class="overlight">
+							<h2>Solutions:</h2>
+							<ul class="teal">
+								<li>Single Page Application (SPA)</li>
+								<li>Responsiveness</li>
+								<li>Device detection</li>
+							</ul>
+						</div>
+						<aside class="notes">
+							<ul>
+								<li>Instead of asking the server for a new page everytime something changes we get THE single page from the server once and change it as we need.</li>
+								<li>After initial load network traffic becomes much smaller</li>
+								<li>If data doesn't load, you still have the application running.</li>
+							</ul>
+						</aside>
+					</section>
 				</section>
 
 				<section data-background-transition="slide" data-background="./img/complex.jpg">
 					<div class="overlight">
-						<h2>Problem 3: How to deal with increase complexity</h2>
+						<h2>Problem 4: How to deal with increased complexity</h2>
 						<ul>
 							<li>Single page applications</li>
 							<li>Tons of logic on the client</li>
