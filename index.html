@@ -17,6 +17,8 @@
 		<link rel="stylesheet" href="./devdom.css" id="custom">
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -435,6 +437,18 @@
 							<li>Build views like nesting dolls</li>
 						</ul>
 					</section>
+					<section>
+						<div class="form-group">
+							<label id="floatlabel">superhero name</label>
+							<input placeholder="superhero name" type="text" id="floatinput">
+						</div>
+					</section>
+					<section>
+						<img class="clean" src="./img/floatlabel.png"/>
+					</section>
+					<section>
+						<img class="clean" src="./img/floatlabelcomponent.png"/>
+					</section>
 				</section>
 
 				<section>
@@ -510,6 +524,17 @@
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
+			});
+
+
+			$('#floatlabel').hide();
+			$('#floatinput').on('input', function () {
+				var floatinputVal = $('#floatinput').val();
+				if (floatinputVal.length > 0) {
+					$('#floatlabel').show();
+				} else {
+					$('#floatlabel').hide();
+				}
 			});
 		</script>
 
